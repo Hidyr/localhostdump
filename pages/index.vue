@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-red-900">
     Hello World
     Dump is Alive
   </div>
