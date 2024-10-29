@@ -2,7 +2,7 @@
   <div class="bg-red-900">
     Hello World
     Dump is Alive
-  </div>
+     </div>
 </template>
 
 <script setup>

@@ -6,6 +6,20 @@ export default defineNuxtConfig({
   devServer: {
     port: 8899
   },
+  eslint: {
+    config: {
+      stylistic: {
+        indent: 'tab',
+        semi: true,
+      }
+    }
+  },
 
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/fonts']
+
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxt/fonts',
+    '@nuxt/eslint',
+    '@pinia/nuxt'
+  ]
 })
