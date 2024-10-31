@@ -5,7 +5,7 @@
     Thanks for coming, I'm in the dressing room.
     Want to contribute?
     Join me here👇
-    <a href="https://github.com/localhostdump/localhostdump" target="_blank">Localhostdump</a>
+    <a href="https://github.com/Hidyr/localhostdump" target="_blank">Localhostdump</a>
   </pre>
 </template>
 
