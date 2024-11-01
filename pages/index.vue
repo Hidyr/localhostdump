@@ -174,7 +174,7 @@ const toggleCategory = (category) => {
 				</p>
 			</div>
 			<button
-				class="flex items-center gap-2 px-4 py-2 bg-black text-white rounded-md hover:bg-black transition-colors"
+				class="flex items-center gap-2 px-4 py-2 bg-black text-white rounded-md transition-colors"
 				@click="showModal = true"
 			>
 				<Icon

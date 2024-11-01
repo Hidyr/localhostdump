@@ -156,7 +156,7 @@ const submitProject = () => {
 					</button>
 					<button
 						type="submit"
-						class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"
+						class="px-4 py-2 bg-black text-white rounded-md transition-colors"
 					>
 						Dump Project
 					</button>

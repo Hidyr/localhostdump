@@ -15,7 +15,7 @@ defineProps({
 					{{ project.title }}
 				</h3>
 				<p class="text-sm text-gray-500">
-					Abandoned by {{ project.author }} on {{ project.date }}
+					{{ project.author }} on {{ project.date }}
 				</p>
 			</div>
 			<div class="flex gap-2 items-center">
