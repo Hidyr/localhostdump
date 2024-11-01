@@ -48,7 +48,7 @@ To contribute code to **localhostdump**, follow these steps:
 1. **Fork the Repository**: Create a fork of this repository.
 2. **Clone Your Fork**: Clone the forked repository to your local machine.
    ```bash
-   git clone https://github.com/localhostdump/localhostdump.git
+   git clone https://github.com/Hidyr/localhostdump.git
    ```
 3. **Create a Branch**: Create a new branch for your changes.
    ```bash
@@ -71,7 +71,7 @@ To set up **localhostdump** on your local machine:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/localhostdump/localhostdump.git
+   git clone https://github.com/Hidyr/localhostdump.git
    ```
 2. **Install dependencies**:
    ```bash
