@@ -1,4 +1,4 @@
-[] Tailwind setup
+[x] Tailwind setup
 
 [] landing page
 
@@ -9,7 +9,7 @@
 
 [] dashboard
 
-[] Project listing
+[x] Project listing
 
 [] description page
 
