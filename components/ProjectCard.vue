@@ -8,7 +8,7 @@ defineProps({
 </script>
 
 <template>
-	<div class="bg-white rounded-lg shadow-md mb-4 p-6">
+	<div class="bg-white px-4 py-6 shadow sm:rounded-lg sm:p-6">
 		<div class="md:flex justify-between items-start">
 			<div>
 				<h3 class="text-xl font-bold">
