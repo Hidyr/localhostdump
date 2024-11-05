@@ -20,6 +20,13 @@ export default defineNuxtConfig({
 		port: 8899,
 	},
 	compatibilityDate: '2024-04-03',
+	nitro: {
+		esbuild: {
+			options: {
+				drop: ['console'],
+			},
+		},
+	},
 	eslint: {
 		config: {
 			stylistic: {
