@@ -1,4 +1,6 @@
-const projects = [
+import ProjectModel from '../models/Project';
+
+const dummyProjects = [
 	{
 		title: 'AI Recipe Generator',
 		author: 'devJane',
@@ -92,8 +94,16 @@ const projects = [
 	},
 ];
 
-export default defineEventHandler(() => {
+export default defineEventHandler(async () => {
+	const _projects = await getProjects();
 	return {
-		projects,
+		projects: [
+			..._projects,
+			...dummyProjects,
+		],
 	};
 });
+
+async function getProjects() {
+	return await ProjectModel.find({});
+}
