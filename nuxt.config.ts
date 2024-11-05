@@ -8,7 +8,14 @@ export default defineNuxtConfig({
 		'@pinia/nuxt',
 		'@nuxt/icon',
 	],
+	plugins: [
+		{ src: '~/plugins/mongoose.ts', mode: 'server' },
+	],
 	devtools: { enabled: false },
+	runtimeConfig: {
+		mongoURILocal: '',
+		mongoURIProd: '',
+	},
 	devServer: {
 		port: 8899,
 	},
@@ -21,4 +28,5 @@ export default defineNuxtConfig({
 			},
 		},
 	},
+
 });
