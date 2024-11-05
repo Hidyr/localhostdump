@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 const projectSchema = new mongoose.Schema({
-	userId: {
+	author: {
 		type: String,
 		required: true,
 	},
@@ -13,7 +13,7 @@ const projectSchema = new mongoose.Schema({
 		type: String,
 		required: true,
 	},
-	technologies: {
+	tech: {
 		type: [String],
 		required: true,
 	},
@@ -33,7 +33,7 @@ const projectSchema = new mongoose.Schema({
 		type: [String],
 		required: false,
 	},
-	fork: {
+	forks: {
 		type: [String],
 		required: false,
 	},
