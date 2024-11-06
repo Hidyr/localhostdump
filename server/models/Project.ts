@@ -1,4 +1,6 @@
 import mongoose from 'mongoose';
+import User from './User';
+import Comment from './Comment';
 
 const projectSchema = new mongoose.Schema({
 	userId: {
@@ -40,11 +42,9 @@ const projectSchema = new mongoose.Schema({
 }, { timestamps: true });
 
 // Virtual for author (to be populated separately)
-projectSchema.virtual('author', {
-	ref: 'User',
-	localField: 'userId',
-	foreignField: '_id',
-	justOne: true,
+projectSchema.virtual('author').get(async function () {
+	const user = await User.findById(this.userId).select('username');
+	return user ? user.username : null;
 });
 
 // Virtual for totalLikes
@@ -58,11 +58,8 @@ projectSchema.virtual('totalForks').get(function () {
 });
 
 // Virtual for totalComments
-projectSchema.virtual('totalComments', {
-	ref: 'Comment',
-	localField: '_id',
-	foreignField: 'projectId',
-	count: true,
+projectSchema.virtual('totalComments').get(async function () {
+	return await Comment.countDocuments({ projectId: this._id });
 });
 
 projectSchema.set('toJSON', { virtuals: true });
