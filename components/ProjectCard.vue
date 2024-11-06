@@ -72,7 +72,7 @@ defineProps({
 					name="lucide:thumbs-up"
 					class="w-4 h-4"
 				/>
-				{{ project.likes }}
+				{{ project.totalLikes }}
 			</span>
 			<span class="flex items-center gap-1">
 				<Icon
@@ -86,7 +86,7 @@ defineProps({
 					name="lucide:git-fork"
 					class="w-4 h-4"
 				/>
-				{{ project.forks }}
+				{{ project.totalForks }}
 			</span>
 		</div>
 
