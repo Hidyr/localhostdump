@@ -28,7 +28,7 @@ defineProps({
 				</span>
 				<span
 					v-if="project.category"
-					class="px-2 py-1 text-xs bg-blue-100 text-blue-800 rounded-full"
+					class="px-2 py-1 text-xs bg-gray-100 text-gray-800 rounded-full"
 				>
 					{{ project.category }}
 				</span>
@@ -44,7 +44,7 @@ defineProps({
 				v-if="project.repo"
 				:href="project.repo"
 				target="_blank"
-				class="flex items-center gap-1 text-sm text-gray-600 hover:text-blue-600"
+				class="flex items-center gap-1 text-sm text-gray-600 hover:text-gray-600"
 			>
 				<Icon
 					name="lucide:github"
@@ -56,7 +56,7 @@ defineProps({
 				v-if="project.site"
 				:href="project.site"
 				target="_blank"
-				class="flex items-center gap-1 text-sm text-gray-600 hover:text-blue-600"
+				class="flex items-center gap-1 text-sm text-gray-600 hover:text-gray-600"
 			>
 				<Icon
 					name="lucide:external-link"

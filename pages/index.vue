@@ -84,7 +84,7 @@ const toggleCategory = (category) => {
 				</p>
 			</div>
 			<button
-				class="flex items-center gap-2 px-4 py-2 bg-black text-white rounded-md transition-colors"
+				class="flex items-center gap-2 px-4 py-2 bg-gray-600 text-white rounded-md transition-colors"
 				@click="showModal = true"
 			>
 				<Icon
@@ -103,7 +103,7 @@ const toggleCategory = (category) => {
 					v-model="searchQuery"
 					type="text"
 					placeholder="Search projects..."
-					class="w-full px-4 py-2 border rounded-md pl-10 focus:outline-none focus:ring-2 focus:ring-blue-500"
+					class="w-full px-4 py-2 border rounded-md pl-10 focus:outline-none focus:ring-2 focus:ring-gray-500"
 				>
 				<Icon
 					name="lucide:search"
@@ -115,7 +115,7 @@ const toggleCategory = (category) => {
 			<!-- <div class="flex items-center space-x-2">
         <select
           v-model="sortBy"
-          class="px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          class="px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-gray-500"
         >
           <option value="date">Sort by Date</option>
           <option value="likes">Sort by Likes</option>
@@ -142,7 +142,7 @@ const toggleCategory = (category) => {
 				:class="[
 					'px-3 py-1 rounded-full cursor-pointer transition-colors',
 					selectedCategories.includes(category)
-						? 'bg-blue-600 text-white'
+						? 'bg-gray-600 text-white'
 						: 'bg-gray-200 text-gray-700 hover:bg-gray-300',
 				]"
 				@click="toggleCategory(category)"

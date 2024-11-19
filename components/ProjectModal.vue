@@ -44,7 +44,7 @@ const submitProject = () => {
 </script>
 
 <template>
-	<div class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center">
+	<div class="fixed inset-0 bg-gray-600 bg-opacity-50 z-50 flex items-center justify-center">
 		<div class="bg-white rounded-lg p-8 w-full max-w-lg max-h-[90vh] overflow-y-auto">
 			<div class="flex justify-between items-center mb-6">
 				<h2 class="text-2xl font-bold">
@@ -71,7 +71,7 @@ const submitProject = () => {
 						v-model="newProject.title"
 						type="text"
 						required
-						class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+						class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-gray-500"
 						placeholder="Enter project title"
 					>
 				</div>
@@ -81,7 +81,7 @@ const submitProject = () => {
 					<input
 						v-model="newProject.author"
 						type="text"
-						class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+						class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-gray-500"
 						placeholder="Your username"
 					>
 				</div>
@@ -91,7 +91,7 @@ const submitProject = () => {
 					<input
 						v-model="newProject.tech"
 						type="text"
-						class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+						class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-gray-500"
 						placeholder="React, Node.js, TypeScript"
 					>
 				</div>
@@ -100,7 +100,7 @@ const submitProject = () => {
 					<label class="block mb-2 font-medium">Category</label>
 					<select
 						v-model="newProject.category"
-						class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+						class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-gray-500"
 					>
 						<option value="">
 							Select a category
@@ -121,7 +121,7 @@ const submitProject = () => {
 						v-model="newProject.description"
 						required
 						rows="4"
-						class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+						class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-gray-500"
 						placeholder="What was your project about? Why did you abandon it?"
 					/>
 				</div>
@@ -131,7 +131,7 @@ const submitProject = () => {
 					<input
 						v-model="newProject.repo"
 						type="url"
-						class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+						class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-gray-500"
 						placeholder="https://github.com/username/project"
 					>
 				</div>
@@ -141,7 +141,7 @@ const submitProject = () => {
 					<input
 						v-model="newProject.site"
 						type="url"
-						class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+						class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-gray-500"
 						placeholder="https://your-project-demo.com"
 					>
 				</div>
@@ -156,7 +156,7 @@ const submitProject = () => {
 					</button>
 					<button
 						type="submit"
-						class="px-4 py-2 bg-black text-white rounded-md transition-colors"
+						class="px-4 py-2 bg-gray-600 text-white rounded-md transition-colors"
 					>
 						Dump Project
 					</button>
