@@ -1,4 +1,15 @@
 <script setup>
+import { useRouter } from 'vue-router';
+import { useProjectStore } from '~/store/project.state';
+
+const router = useRouter();
+const projectStore = useProjectStore();
+
+const gotoProjectDetail = (project) => {
+	projectStore.setCurrentProject(project);
+	router.push('/detail');
+};
+
 const { data } = await useFetch('/api/project');
 
 const projects = ref(data?.value?.projects || []);
@@ -160,6 +171,7 @@ const toggleCategory = (category) => {
 				v-for="(project, index) in filteredAndSortedProjects"
 				:key="index"
 				:project="project"
+				@emit-current-project="gotoProjectDetail"
 			/>
 		</div>
 		<div

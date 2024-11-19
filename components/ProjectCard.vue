@@ -1,14 +1,22 @@
 <script setup>
-defineProps({
+const props = defineProps({
 	project: {
 		type: Object,
 		required: true,
 	},
 });
+const emit = defineEmits(['emitCurrentProject']);
+
+const emitProject = () => {
+	emit('emitCurrentProject', props.project);
+};
 </script>
 
 <template>
-	<div class="bg-white px-4 py-6 shadow sm:rounded-lg sm:p-6">
+	<div
+		class="bg-white px-4 py-6 shadow sm:rounded-lg sm:p-6 cursor-pointer"
+		@click="emitProject"
+	>
 		<div class="md:flex justify-between items-start">
 			<div>
 				<h3 class="text-xl font-bold">
