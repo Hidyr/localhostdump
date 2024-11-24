@@ -1,9 +1,11 @@
 <script setup>
+import { createPinia } from 'pinia';
 import { useRouter } from 'vue-router';
 import { useProjectStore } from '~/store/project.state';
 
+const pinia = createPinia();
 const router = useRouter();
-const projectStore = useProjectStore();
+const projectStore = useProjectStore(pinia);
 
 const gotoProjectDetail = (project) => {
 	projectStore.setCurrentProject(project);
