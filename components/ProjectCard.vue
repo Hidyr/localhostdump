@@ -56,7 +56,7 @@ const emitProject = () => {
 			>
 				<Icon
 					name="lucide:github"
-					class="w-4 h-4"
+					class="w-4 h-4 shrink-0 text-gray-400"
 				/>
 				Repository
 			</a>
@@ -68,7 +68,7 @@ const emitProject = () => {
 			>
 				<Icon
 					name="lucide:external-link"
-					class="w-4 h-4"
+					class="w-4 h-4 shrink-0 text-gray-400"
 				/>
 				Live Demo
 			</a>
@@ -78,38 +78,38 @@ const emitProject = () => {
 			<span class="flex items-center gap-1">
 				<Icon
 					name="lucide:thumbs-up"
-					class="w-4 h-4"
+					class="w-4 h-4 shrink-0 text-gray-400"
 				/>
 				{{ project.totalLikes }}
 			</span>
 			<span class="flex items-center gap-1">
 				<Icon
 					name="lucide:message-square"
-					class="w-4 h-4"
+					class="w-4 h-4 shrink-0 text-gray-400"
 				/>
 				{{ project.comments }}
 			</span>
 			<span class="flex items-center gap-1">
 				<Icon
 					name="lucide:git-fork"
-					class="w-4 h-4"
+					class="w-4 h-4 shrink-0 text-gray-400"
 				/>
 				{{ project.totalForks }}
 			</span>
 		</div>
 
 		<div class="flex justify-between">
-			<button class="flex items-center gap-2 px-4 py-2 border border-gray-300 rounded-md hover:bg-gray-50 transition-colors">
+			<button class="flex items-center gap-2 px-4 py-2 border border-gray-300 rounded-md hover:bg-gray-50 transition-colors text-gray-400">
 				<Icon
 					name="lucide:git-fork"
-					class="w-4 h-4"
+					class="w-4 h-4 shrink-0 text-gray-400"
 				/>
 				Fork Project
 			</button>
 			<button class="p-2 text-red-500 hover:text-red-700 transition-colors">
 				<Icon
 					name="lucide:trash-2"
-					class="w-4 h-4"
+					class="w-4 h-4 shrink-0 text-gray-400"
 				/>
 			</button>
 		</div>
